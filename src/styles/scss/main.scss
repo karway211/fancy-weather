@@ -1,0 +1,210 @@
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: auto;
+}
+
+body {
+    display: flex;
+    background-color: black;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 90px 96px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3)), url('../../assets/images/bg\ 3.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &--param {
+        width: 233px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--searching {
+        width: 375px;
+        display: flex;
+        .searching--city {
+            width: 100%;
+            height: 38px;
+        }
+        .searching--voice {
+            height: 44px;
+            width: 44px;
+            background: url(../../assets/images/Vector.svg) no-repeat center;
+            cursor: pointer;
+        }
+        .searching--bth {
+            height: 44px;
+            width: 101px;
+            cursor: pointer;
+        }
+    }
+    &--bth {
+        background: url(../../assets/images/Vector1.svg) no-repeat center;
+    }
+    &--bth,
+    &--celsius,
+    &--fahrenheit {
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+    &--select {
+        width: 71px;
+        height: 44px;
+        cursor: pointer;
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 57px;
+    align-items: flex-end;
+}
+
+.wrapper--weather{
+    width: 597px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.3));
+    
+}
+.wrapper--today {
+    display: flex;
+    justify-content: space-around;
+}
+.weather--date,
+.weather--time {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #ffffff;
+}
+.weather--today {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15rem;
+    line-height: 373px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.weather--city {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.75rem;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.wrapper--three_days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descr--ul {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.38rem;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+    .descr--li {
+        list-style-type: none;
+    }
+}
+
+.three_days--temp {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 98px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+// map
+
+.geoLocat--wrapper {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0, 0, 0, 0.3));
+}
+
+.geoLocat--map {
+    width: 375px;
+    height: 390px;
+    margin-bottom: 15px;
+}
+
+.latitude--map,
+.longitude--map {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.active {
+    background-color: #ffa600;
+}
+
+.three_days--name {
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+    .header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1160px) {
+    .main {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1160px) {
+    html {
+        font-size: 12px;
+    }
+    .weather--today {
+        line-height: 200px;
+    }
+}
+
+@media (max-width: 980px) {
+    .root {
+        padding: 40px 0px 96px;
+    }
+}
