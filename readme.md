@@ -1,4 +1,4 @@
-# [fancy-weather]()
+# [fancy-weather](https://karway211.github.io/fancy-weather)
 
 # 1. To clone the repository: git clone https://github.com/rolling-scopes-school/karway211-RS2019Q3.git
 
